@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 07396bb2304e2cc4c94dadd6e42d6e83, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 1668256399439953923
+  m_TableData:
+  - m_Id: 59620683776
+    m_Localized: Atombuilder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10376471867392
+    m_Localized: Impostazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31319965528064
+    m_Localized: 'Gioca
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33242684813312
+    m_Localized: Esci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33317733494784
+    m_Localized: Impostazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35230810075136
+    m_Localized: Italiano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35313148456960
+    m_Localized: Inglese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36820103163904
+    m_Localized: 'Menu
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40784311840768
+    m_Localized: Lingua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259807653883904
+    m_Localized: 'Elettroni: {electronCount}'
+    m_Metadata:
+      m_Items:
+      - rid: 1668256399439953923
+  - m_Id: 293621021241344
+    m_Localized: Riprova
+    m_Metadata:
+      m_Items: []
+  - m_Id: 293836256145408
+    m_Localized: Verifica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 375300096225280
+    m_Localized: Punti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430744487555072
+    m_Localized: Fatto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430810736586752
+    m_Localized: Resettato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437544666492928
+    m_Localized: Chiudi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 439884219904000
+    m_Localized: Errato!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 439966143049728
+    m_Localized: Corretto!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 738830779641856
+    m_Localized: '*Al momento, solo i primi 35 elementi sono supportati.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 742396990812160
+    m_Localized: Elemento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 427498012372992
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 802229043556352
+    m_Localized: Hai perso!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 806047575666688
+    m_Localized: Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810183541092352
+    m_Localized: Serie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 819705877852160
+    m_Localized: Come si Gioca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820287099334656
+    m_Localized: "Modalit\xE0 di Gioco"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820366791110656
+    m_Localized: Costruisci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 820448076722176
+    m_Localized: Indovina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1017605668958208
+    m_Localized: Cambia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1018775489703936
+    m_Localized: -1 punto
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1668256399439953923
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0070eb2e4bec0000
