@@ -1,0 +1,144 @@
+{
+    "table": [
+        {
+            "symbol": "H",
+            "atomicNumber": 1
+        },
+        {
+            "symbol": "He",
+            "atomicNumber": 2
+        },
+        {
+            "symbol": "Li",
+            "atomicNumber": 3
+        },
+        {
+            "symbol": "Be",
+            "atomicNumber": 4
+        },
+        {
+            "symbol": "B",
+            "atomicNumber": 1
+        },
+        {
+            "symbol": "C",
+            "atomicNumber": 6
+        },
+        {
+            "symbol": "N",
+            "atomicNumber": 7
+        },
+        {
+            "symbol": "O",
+            "atomicNumber": 8
+        },
+        {
+            "symbol": "F",
+            "atomicNumber": 9
+        },
+        {
+            "symbol": "Ne",
+            "atomicNumber": 10
+        },
+        {
+            "symbol": "Na",
+            "atomicNumber": 11
+        },
+        {
+            "symbol": "Mg",
+            "atomicNumber": 12
+        },
+        {
+            "symbol": "Al",
+            "atomicNumber": 13
+        },
+        {
+            "symbol": "Si",
+            "atomicNumber": 14
+        },
+        {
+            "symbol": "P",
+            "atomicNumber": 15
+        },
+        {
+            "symbol": "S",
+            "atomicNumber": 16
+        },
+        {
+            "symbol": "Cl",
+            "atomicNumber": 17
+        },
+        {
+            "symbol": "Ar",
+            "atomicNumber": 18
+        },
+        {
+            "symbol": "K",
+            "atomicNumber": 19
+        },
+        {
+            "symbol": "Ca",
+            "atomicNumber": 20
+        },
+        {
+            "symbol": "Sc",
+            "atomicNumber": 21
+        },
+        {
+            "symbol": "Ti",
+            "atomicNumber": 22
+        },
+        {
+            "symbol": "V",
+            "atomicNumber": 23
+        },
+        {
+            "symbol": "Cr",
+            "atomicNumber": 24
+        },
+        {
+            "symbol": "Mn",
+            "atomicNumber": 25
+        },
+        {
+            "symbol": "Fe",
+            "atomicNumber": 26
+        },
+        {
+            "symbol": "Co",
+            "atomicNumber": 27
+        },
+        {
+            "symbol": "Ni",
+            "atomicNumber": 28
+        },
+        {
+            "symbol": "Cu",
+            "atomicNumber": 29
+        },
+        {
+            "symbol": "Zn",
+            "atomicNumber": 30
+        },
+        {
+            "symbol": "Ga",
+            "atomicNumber": 31
+        },
+        {
+            "symbol": "Ge",
+            "atomicNumber": 32
+        },
+        {
+            "symbol": "As",
+            "atomicNumber": 33
+        },
+        {
+            "symbol": "Se",
+            "atomicNumber": 34
+        },
+        {
+            "symbol": "Br",
+            "atomicNumber": 35
+        }
+    ]
+}
