@@ -151,6 +151,14 @@ MonoBehaviour:
     m_Key: Guesses Text
     m_Metadata:
       m_Items: []
+  - m_Id: 1444057254162432
+    m_Key: Resume Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1444293779353600
+    m_Key: Pause Menu Header
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

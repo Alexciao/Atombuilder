@@ -151,6 +151,14 @@ MonoBehaviour:
     m_Localized: Guesses
     m_Metadata:
       m_Items: []
+  - m_Id: 1444057254162432
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1444293779353600
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919872c9-f53a-40cc-a3a6-75e20b9059be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/UI/Symbols/Resume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/UI/Symbols/Resume.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Blur Panel.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Blur Panel.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BlurShaderController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BlurShaderController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Atombuilder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Atombuilder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Score/GuessManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Score/GuessManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text_it.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Tables/UI Text_it.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Materials/Blur Panel.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Materials/Blur Panel.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Key Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Key Config.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Animated Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Animated Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Build Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Build Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DontDestroyOnLoad.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DontDestroyOnLoad.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +89,9 @@
       <workItem from="1668861291389" duration="3687000" />
       <workItem from="1668932808462" duration="2617000" />
       <workItem from="1668947220756" duration="204000" />
+      <workItem from="1668951696529" duration="20000" />
+      <workItem from="1668951785063" duration="28000" />
+      <workItem from="1668952291016" duration="1282000" />
     </task>
     <servers />
   </component>

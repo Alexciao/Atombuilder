@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Aa]ssets/[Pp]lugins/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -75,3 +76,6 @@ crashlytics-build.properties
 /[Bb]uilds/
 /[Ww]indows[Bb]uilds/
 /[Ll]inux[Bb]uilds/
+/[Oo][Ss][Xx][Bb]uilds/
+/[Mm]ac[Bb]uilds/
+/[Mm]ac[Oo]s[Bb]uilds/
