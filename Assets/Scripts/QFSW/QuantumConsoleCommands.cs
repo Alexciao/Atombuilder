@@ -9,7 +9,6 @@ public class QuantumConsoleCommands : MonoBehaviour
     [SerializeField] private JSONManager _jsonManager;
     [SerializeField] private ParticleManager _particleManager;
     [SerializeField] private ScoreManager _scoreManager;
-    // [SerializeField] private LocalizationManager _localizationManager;
     [SerializeField] private CheckManager _checkManager;
     [SerializeField] private GuessManager _guessManager;
 
@@ -18,10 +17,11 @@ public class QuantumConsoleCommands : MonoBehaviour
         _jsonManager = GetComponent<JSONManager>();
         _particleManager = GetComponent<ParticleManager>();
         _scoreManager = GetComponent<ScoreManager>();
-        // _localizationManager = GetComponent<LocalizationManager>();
         _checkManager = GetComponent<CheckManager>();
         _guessManager = GetComponent<GuessManager>();
     }
+    
+    #region General
     
     [Command("reroll-element", "Rerolls the current element")]
     private void Reroll()
@@ -47,18 +47,16 @@ public class QuantumConsoleCommands : MonoBehaviour
         _scoreManager.Die();
     }
 
+    #endregion
+    
+    #region Build Mode
+    
     [Command("reset", "Resets all particles")]
     private void Reset()
     {
         _particleManager.HeadlessReset();
     }
     
-    // [Command("Change-Locale", "Changes the locale")]
-    // private void ChangeLocale(int locale)
-    // {
-    //    _localizationManager.ChangeLocaleHeadless(locale);
-    //}
-
     [Command("reveal-solution-build", "Reveals solution on Build Mode.")]
     private void RevealSolutionBuild()
     {
@@ -73,9 +71,31 @@ public class QuantumConsoleCommands : MonoBehaviour
         else Debug.LogWarning("No CheckManager was found, you are probably in the wrong mode.");
     }
 
+    #endregion
+    
+    #region Guess Mode
+
     [Command("set-atom", "Sets the correct atom on Guess Mode.")]
     private void SetAtom()
     {
         _guessManager.SetAtom();
     }
+
+    [Command("reveal-solution-guess", "Reveals solution on Guess Mode.")]
+    private void RevealSolutionGuess()
+    {
+        if (_guessManager != null) _guessManager.RevealSolution();
+        else Debug.LogWarning("No GuessManager was found, you are probably in the wrong mode.");
+    }
+
+    [Command("solve-guess", "Automatically solves the puzzle on Guess Mode.")]
+    private void SolveGuess()
+    {
+        if (_guessManager != null) _guessManager.Solve();
+        else Debug.LogWarning("No GuessManager was found, you are probably in the wrong mode.");
+    }
+    
+    #endregion
+    
+
 }

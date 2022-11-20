@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI streakText;
     [Header("End Screen")]
-    [SerializeField] private TextMeshProUGUI highScoreText;
+    [SerializeField] private TextMeshProUGUI[] highScoreText;
 
     [Header("Public Variables")] 
     public int score = 0;
@@ -64,7 +64,10 @@ public class ScoreManager : MonoBehaviour
 
     void UpdateText()
     {
-        highScoreText.text = highScore.ToString();
+        foreach (TextMeshProUGUI text in highScoreText)
+        {
+            text.text = highScore.ToString();
+        }
         scoreText.text = score.ToString();
         streakText.text = streak.ToString();
     }

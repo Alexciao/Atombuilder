@@ -143,6 +143,14 @@ MonoBehaviour:
     m_Localized: -1 point
     m_Metadata:
       m_Items: []
+  - m_Id: 1354545698140160
+    m_Localized: Are you sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363080808984576
+    m_Localized: Guesses
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
