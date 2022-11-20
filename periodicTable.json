@@ -143,6 +143,330 @@
         {
             "symbol": "Kr",
             "atomicNumber": 36
+        },
+        {
+            "symbol": "Rb",
+            "atomicNumber": 37
+        },
+        {
+            "symbol": "Sr",
+            "atomicNumber": 38
+        },
+        {
+            "symbol": "Y",
+            "atomicNumber": 39
+        },
+        {
+            "symbol": "Zr",
+            "atomicNumber": 40
+        },
+        {
+            "symbol": "Nb",
+            "atomicNumber": 41
+        },
+        {
+            "symbol": "Mo",
+            "atomicNumber": 42
+        },
+        {
+            "symbol": "Tc",
+            "atomicNumber": 43
+        },
+        {
+            "symbol": "Ru",
+            "atomicNumber": 44
+        },
+        {
+            "symbol": "Rh",
+            "atomicNumber": 45
+        },
+        {
+            "symbol": "Pd",
+            "atomicNumber": 46
+        },
+        {
+            "symbol": "Ag",
+            "atomicNumber": 47
+        },
+        {
+            "symbol": "Cd",
+            "atomicNumber": 48
+        },
+        {
+            "symbol": "In",
+            "atomicNumber": 49
+        },
+        {
+            "symbol": "Sn",
+            "atomicNumber": 50
+        },
+        {
+            "symbol": "Sb",
+            "atomicNumber": 51
+        },
+        {
+            "symbol": "Te",
+            "atomicNumber": 52
+        },
+        {
+            "symbol": "I",
+            "atomicNumber": 53
+        },
+        {
+            "symbol": "Xe",
+            "atomicNumber": 54
+        },
+        {
+            "symbol": "Cs",
+            "atomicNumber": 55
+        },
+        {
+            "symbol": "La",
+            "atomicNumber": 57
+        },
+        {
+            "symbol": "Ce",
+            "atomicNumber": 58
+        },
+        {
+            "symbol": "Pr",
+            "atomicNumber": 59
+        },
+        {
+            "symbol": "Nd",
+            "atomicNumber": 60
+        },
+        {
+            "symbol": "Pm",
+            "atomicNumber": 61
+        },
+        {
+            "symbol": "Sm",
+            "atomicNumber": 62
+        },
+        {
+            "symbol": "Eu",
+            "atomicNumber": 63
+        },
+        {
+            "symbol": "Gd",
+            "atomicNumber": 64
+        },
+        {
+            "symbol": "Tb",
+            "atomicNumber": 65
+        },
+        {
+            "symbol": "Dy",
+            "atomicNumber": 66
+        },
+        {
+            "symbol": "Ho",
+            "atomicNumber": 67
+        },
+        {
+            "symbol": "Er",
+            "atomicNumber": 68
+        },
+        {
+            "symbol": "Tm",
+            "atomicNumber": 69
+        },
+        {
+            "symbol": "Yb",
+            "atomicNumber": 70
+        },
+        {
+            "symbol": "Lu",
+            "atomicNumber": 71
+        },
+        {
+            "symbol": "Hf",
+            "atomicNumber": 72
+        },
+        {
+            "symbol": "Ta",
+            "atomicNumber": 73
+        },
+        {
+            "symbol": "W",
+            "atomicNumber": 74
+        },
+        {
+            "symbol": "Re",
+            "atomicNumber": 75
+        },
+        {
+            "symbol": "Os",
+            "atomicNumber": 76
+        },
+        {
+            "symbol": "Ir",
+            "atomicNumber": 77
+        },
+        {
+            "symbol": "Pt",
+            "atomicNumber": 78
+        },
+        {
+            "symbol": "Au",
+            "atomicNumber": 79
+        },
+        {
+            "symbol": "Hg",
+            "atomicNumber": 80
+        },
+        {
+            "symbol": "Tl",
+            "atomicNumber": 81
+        },
+        {
+            "symbol": "Pb",
+            "atomicNumber": 82
+        },
+        {
+            "symbol": "Bi",
+            "atomicNumber": 83
+        },
+        {
+            "symbol": "Po",
+            "atomicNumber": 84
+        },
+        {
+            "symbol": "At",
+            "atomicNumber": 85
+        },
+        {
+            "symbol": "Rn",
+            "atomicNumber": 86
+        },
+        {
+            "symbol": "Fr",
+            "atomicNumber": 87
+        },
+        {
+            "symbol": "Ra",
+            "atomicNumber": 88
+        },
+        {
+            "symbol": "Ac",
+            "atomicNumber": 89
+        },
+        {
+            "symbol": "Th",
+            "atomicNumber": 90
+        },
+        {
+            "symbol": "Pa",
+            "atomicNumber": 91
+        },
+        {
+            "symbol": "U",
+            "atomicNumber": 92
+        },
+        {
+            "symbol": "Np",
+            "atomicNumber": 93
+        },
+        {
+            "symbol": "Pu",
+            "atomicNumber": 94
+        },
+        {
+            "symbol": "Am",
+            "atomicNumber": 95
+        },
+        {
+            "symbol": "Cm",
+            "atomicNumber": 96
+        },
+        {
+            "symbol": "Bk",
+            "atomicNumber": 97
+        },
+        {
+            "symbol": "Cf",
+            "atomicNumber": 98
+        },
+        {
+            "symbol": "Es",
+            "atomicNumber": 99
+        },
+        {
+            "symbol": "Fm",
+            "atomicNumber": 100
+        },
+        {
+            "symbol": "Md",
+            "atomicNumber": 101
+        },
+        {
+            "symbol": "No",
+            "atomicNumber": 102
+        },
+        {
+            "symbol": "Lr",
+            "atomicNumber": 103
+        },
+        {
+            "symbol": "Rf",
+            "atomicNumber": 104
+        },
+        {
+            "symbol": "Db",
+            "atomicNumber": 105
+        },
+        {
+            "symbol": "Sg",
+            "atomicNumber": 106
+        },
+        {
+            "symbol": "Bh",
+            "atomicNumber": 107
+        },
+        {
+            "symbol": "Hs",
+            "atomicNumber": 108
+        },
+        {
+            "symbol": "Mt",
+            "atomicNumber": 109
+        },
+        {
+            "symbol": "Ds",
+            "atomicNumber": 110
+        },
+        {
+            "symbol": "Rg",
+            "atomicNumber": 111
+        },
+        {
+            "symbol": "Cn",
+            "atomicNumber": 112
+        },
+        {
+            "symbol": "Nh",
+            "atomicNumber": 113
+        },
+        {
+            "symbol": "Fl",
+            "atomicNumber": 114
+        },
+        {
+            "symbol": "Mc",
+            "atomicNumber": 115
+        },
+        {
+            "symbol": "Lv",
+            "atomicNumber": 116
+        },
+        {
+            "symbol": "Ts",
+            "atomicNumber": 117
+        },
+        {
+            "symbol": "Og",
+            "atomicNumber": 118
         }
     ]
 }
