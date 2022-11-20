@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using QFSW.QC;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
@@ -47,7 +48,7 @@ public class GuessManager : MonoBehaviour
     public void UpdateGuesses()
     {
         rightGuess = Random.Range(0, _guessButtons.Length);
-        
+
         for (int i = 0; i < _guessButtons.Length; i++)
         {
             if (i == rightGuess)

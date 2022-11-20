@@ -139,6 +139,10 @@
         {
             "symbol": "Br",
             "atomicNumber": 35
+        },
+        {
+            "symbol": "Kr",
+            "atomicNumber": 36
         }
     ]
 }

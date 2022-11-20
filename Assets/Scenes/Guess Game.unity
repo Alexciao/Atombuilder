@@ -766,6 +766,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5873750628518114191, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 606600999}
+    - target: {fileID: 5873750628518114191, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reload
+      objectReference: {fileID: 0}
     - target: {fileID: 5873750629106385887, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -813,6 +821,14 @@ PrefabInstance:
     - target: {fileID: 5873750629344056950, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873750629596313442, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 606600999}
+    - target: {fileID: 5873750629596313442, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Switch
       objectReference: {fileID: 0}
     - target: {fileID: 5873750630182487858, guid: 4383656506cd1964e95fdb4cf58b89a9, type: 3}
       propertyPath: m_AnchorMax.y
