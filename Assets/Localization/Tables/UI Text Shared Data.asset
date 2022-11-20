@@ -159,6 +159,10 @@ MonoBehaviour:
     m_Key: Pause Menu Header
     m_Metadata:
       m_Items: []
+  - m_Id: 1475637574070272
+    m_Key: Pause Helper Message
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

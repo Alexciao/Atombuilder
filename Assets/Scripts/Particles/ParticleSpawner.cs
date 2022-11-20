@@ -35,7 +35,7 @@ public class ParticleSpawner : MonoBehaviour
         particleManager = GetComponent<ParticleManager>();
         particleShower = GetComponent<ParticleShower>();
     }
-    
+
     void Spawn(GameObject particlePrefab, Vector2 startPos, Vector2 endPos)
     {
         GameObject particleObj = Instantiate(particlePrefab);
@@ -63,7 +63,7 @@ public class ParticleSpawner : MonoBehaviour
     
     public void SpawnElectron()
     {
-        particleManager.electronCount++;
+        particleManager.AddElectron();
         if (animate) Spawn(electronPrefab, electronStartPos, electronEndPos);
     }
 
@@ -71,7 +71,7 @@ public class ParticleSpawner : MonoBehaviour
     {
         if (particleManager.electronCount > 0)
         {
-            particleManager.electronCount--;
+            particleManager.RemoveElectron();
             if (animate) Remove(electronPrefab, electronStartPos, electronEndPos);
         } 
 
@@ -79,7 +79,7 @@ public class ParticleSpawner : MonoBehaviour
     
     public void SpawnProton()
     {
-        particleManager.protonCount++;
+        particleManager.AddProton();
         if (animate) Spawn(protonPrefab, protonStartPos, protonEndPos);
     }
     
@@ -87,14 +87,14 @@ public class ParticleSpawner : MonoBehaviour
     {
         if (particleManager.protonCount > 0)
         {
-            particleManager.protonCount--;
+            particleManager.RemoveProton();
             if (animate) Remove(protonPrefab, protonStartPos, protonEndPos);
         } 
     }
     
     public void SpawnNeutron()
     {
-        particleManager.neutronCount++;
+        particleManager.AddNeutron();
         if (animate) Spawn(neutronPrefab, neutronStartPos, neutronEndPos);
     }
     
@@ -102,7 +102,7 @@ public class ParticleSpawner : MonoBehaviour
     {
         if (particleManager.neutronCount > 0)
         {
-            particleManager.neutronCount--;
+            particleManager.RemoveNeutron();
             if (animate) Remove(neutronPrefab, neutronStartPos, neutronEndPos);
         } 
     }

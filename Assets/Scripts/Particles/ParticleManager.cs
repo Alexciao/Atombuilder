@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,7 +10,9 @@ public class ParticleManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI electronText;
     [SerializeField] private TextMeshProUGUI protonText;
     [SerializeField] private TextMeshProUGUI neutronText;
+    [SerializeField] private TextMeshProUGUI sliderText;
     [Space, SerializeField, ReadOnly] private ScreenDimmer dimmer;
+    [SerializeField] private int addAmount = 1;
     [Header("Public Variables")]
     [ReadOnly] public int electronCount;
     [ReadOnly] public int protonCount;
@@ -21,7 +24,7 @@ public class ParticleManager : MonoBehaviour
         dimmer = GetComponent<ScreenDimmer>();
         HeadlessReset();
     }
-
+    
     public void Reset()
     {
         if (dimmer != null) dimmer.Dim(0.2f, 0.6f);
@@ -45,5 +48,35 @@ public class ParticleManager : MonoBehaviour
     private void Update()
     {
         UpdateText();
+    }
+    
+    public void AddElectron()
+    {
+        electronCount += addAmount;
+    }
+    
+    public void AddProton()
+    {
+        protonCount += addAmount;
+    }
+    
+    public void AddNeutron()
+    {
+        neutronCount += addAmount;
+    }
+    
+    public void RemoveElectron()
+    {
+        electronCount -= addAmount;
+    }
+    
+    public void RemoveProton()
+    {
+        protonCount -= addAmount;
+    }
+    
+    public void RemoveNeutron()
+    {
+        neutronCount -= addAmount;
     }
 }

@@ -6,7 +6,7 @@ public class QuitManager : MonoBehaviour
 {
     public void Quit()
     {
-        Debug.Log("Goodbye");
+        Debug.Log("Goodbye!");
         Application.Quit();
     }
 }

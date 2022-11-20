@@ -160,6 +160,10 @@ MonoBehaviour:
     m_Localized: Pausa
     m_Metadata:
       m_Items: []
+  - m_Id: 1475637574070272
+    m_Localized: Premi ESC per mettere in pausa
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
