@@ -1974,9 +1974,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3919692652406589297, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 182.45
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3919692652406589297, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919692652406589297, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919692652406589297, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919692652406589297, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -215
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658827224427716871, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_text
+      value: Splash here
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658827224427716871, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c01f24d9a3f227841909dd546d2d2886, type: 2}
+    - target: {fileID: 4658827224427716871, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2357259638145457961, guid: c01f24d9a3f227841909dd546d2d2886, type: 2}
     - target: {fileID: 6557587610337565728, guid: 6abfe9db0b127154187e36c6154a9abc, type: 3}
       propertyPath: m_Name
       value: Menu

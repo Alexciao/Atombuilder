@@ -49,9 +49,14 @@ public class JSONManager : MonoBehaviour
     void InitializeSplashText()
     {
         _splashes = LoadSplashes(_splashesUrlLocalization0); // Fallback
+        FixSplashLocale();
+        RerollSplash();
+    }
+
+    void FixSplashLocale()
+    {
         if (PlayerPrefs.GetInt("LocaleKey", 0) == 0) _splashes = LoadSplashes(_splashesUrlLocalization0);
         if (PlayerPrefs.GetInt("LocaleKey", 0) == 1) _splashes = LoadSplashes(_splashesUrlLocalization1);
-        RerollSplash();
     }
     
     #region Periodic Table
@@ -105,6 +110,7 @@ public class JSONManager : MonoBehaviour
     
     public void RerollSplash()
     {
+        FixSplashLocale();
         _rSplash = ChooseRandomSplash(_splashes);
         SetSplashText();
     }
