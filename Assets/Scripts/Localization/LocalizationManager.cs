@@ -7,6 +7,8 @@ public class LocalizationManager : MonoBehaviour
 {
     private bool active = false;
     [SerializeField, ReadOnly] private ScreenDimmer dimmer;
+    [SerializeField] private bool updateSplashText;
+    [SerializeField] private JSONManager jsonManager;
 
     void Start()
     {
@@ -27,13 +29,14 @@ public class LocalizationManager : MonoBehaviour
         if (dimmer) dimmer.Dim(0.2f, 0.5f);
         StartCoroutine(SetLocale(localeId));
     }
-    
+
     IEnumerator SetLocale(int localeId)
     {
         active = true;
         yield return LocalizationSettings.InitializationOperation;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeId];
         PlayerPrefs.SetInt("LocaleKey", localeId);
+        if (updateSplashText) jsonManager.RerollSplash();
         active = false;
     }
 }

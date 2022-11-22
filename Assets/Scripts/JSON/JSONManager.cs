@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using TMPro;
 using UnityEngine.Networking;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class JSONManager : MonoBehaviour
 {
@@ -12,26 +13,47 @@ public class JSONManager : MonoBehaviour
     public Splashes _splashes;
 
     public Element _rElement;
-    public string _rSplash;
+    [HideInInspector] public string _rSplash;
 
     [Header("References")]
+    // Should have put this in a separate script, but I'm lazy
     [SerializeField] private TextMeshProUGUI _elementName;
+    [SerializeField] private TextMeshProUGUI _splashText;
+    [Space]
     [SerializeField] private GuessManager _guessManager;
-    [Header("Settings")]
+    [Header("Settings")] 
+    [SerializeField] private bool doPeriodicTable = true;
+    [SerializeField] private bool doSplashText = false;
+    [Space]
     [SerializeField] private bool showElement;
-    [SerializeField] private bool downloadFromUrl;
+    [SerializeField] private bool downloadFromUrl = true;
     [Header("URLs")]
     [SerializeField] private string _tableUrl;
-    [SerializeField] private string _splashesUrl;
+    [Space]
+    [SerializeField] private string _splashesUrlLocalization0;
+    [SerializeField] private string _splashesUrlLocalization1;
     
     void Start()
     {
+        if (doPeriodicTable) InitializePeriodicTable();
+        if (doSplashText) InitializeSplashText();
+    }
+
+    void InitializePeriodicTable()
+    {
         table = LoadTable(_tableUrl);
-        
         RerollElement();
         if (showElement) _elementName.text = _rElement.symbol;
     }
-
+    
+    void InitializeSplashText()
+    {
+        _splashes = LoadSplashes(_splashesUrlLocalization0); // Fallback
+        if (PlayerPrefs.GetInt("LocaleKey", 0) == 0) _splashes = LoadSplashes(_splashesUrlLocalization0);
+        if (PlayerPrefs.GetInt("LocaleKey", 0) == 1) _splashes = LoadSplashes(_splashesUrlLocalization1);
+        RerollSplash();
+    }
+    
     #region Periodic Table
     
     public Element ChooseRandomElement(PeriodicTable table)
@@ -44,8 +66,8 @@ public class JSONManager : MonoBehaviour
     public void RerollElement()
     {
         _rElement = ChooseRandomElement(table);
-        if (showElement) _elementName.text = _rElement.symbol;
         if (_guessManager != null) _guessManager.SetAtom();
+        SetElementText();
     }
 
     PeriodicTable LoadTable(string jsonDir)
@@ -64,6 +86,11 @@ public class JSONManager : MonoBehaviour
         }
     }
 
+    void SetElementText()
+    {
+        if (showElement) _elementName.text = _rElement.symbol;
+    }
+    
     #endregion
 
     #region Splash Text
@@ -79,6 +106,7 @@ public class JSONManager : MonoBehaviour
     public void RerollSplash()
     {
         _rSplash = ChooseRandomSplash(_splashes);
+        SetSplashText();
     }
     
     Splashes LoadSplashes(string jsonDir)
@@ -95,6 +123,11 @@ public class JSONManager : MonoBehaviour
             Splashes data = JsonConvert.DeserializeObject<Splashes>(json);
             return data;
         }
+    }
+    
+    void SetSplashText()
+    {
+        _splashText.text = _rSplash;
     }
     
     #endregion
