@@ -36,7 +36,7 @@ public class LocalizationManager : MonoBehaviour
         yield return LocalizationSettings.InitializationOperation;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeId];
         PlayerPrefs.SetInt("LocaleKey", localeId);
-        if (updateSplashText) jsonManager.RerollSplash();
         active = false;
+        if (updateSplashText) jsonManager.RerollSplash();
     }
 }

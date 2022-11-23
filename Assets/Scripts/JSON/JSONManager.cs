@@ -36,7 +36,7 @@ public class JSONManager : MonoBehaviour
     void Start()
     {
         if (doPeriodicTable) InitializePeriodicTable();
-        if (doSplashText) InitializeSplashText();
+        // Splash initialization gets done through LocalizationManager
     }
 
     void InitializePeriodicTable()

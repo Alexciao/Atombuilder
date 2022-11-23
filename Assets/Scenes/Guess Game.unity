@@ -1297,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70
+      value: 70.001465
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1539,11 +1539,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d196775d127ab54ab8cb82b0712c878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jsonUrl: https://raw.githubusercontent.com/Alexciao/Atombuilder/main/periodicTable.json
+  _rSplash: 
   _elementName: {fileID: 0}
+  _splashText: {fileID: 0}
   _guessManager: {fileID: 606601001}
+  doPeriodicTable: 1
+  doSplashText: 0
   showElement: 0
   downloadFromUrl: 1
+  _tableUrl: https://raw.githubusercontent.com/Alexciao/Atombuilder/main/periodicTable.json
+  _splashesUrlLocalization0: 
+  _splashesUrlLocalization1: 
 --- !u!114 &606600999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3677,7 +3683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70
+      value: 70.001465
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3839,7 +3845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1197537923 stripped
@@ -5329,7 +5335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70
+      value: 70.001465
       objectReference: {fileID: 0}
     - target: {fileID: 4095709842924949760, guid: 90ade9d1704cca449b77db3b53ddd2ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

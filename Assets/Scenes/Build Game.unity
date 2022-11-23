@@ -2498,11 +2498,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d196775d127ab54ab8cb82b0712c878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jsonUrl: https://raw.githubusercontent.com/Alexciao/Atombuilder/main/periodicTable.json
+  _rSplash: 
   _elementName: {fileID: 1398715080}
+  _splashText: {fileID: 0}
   _guessManager: {fileID: 0}
+  doPeriodicTable: 1
+  doSplashText: 0
   showElement: 1
   downloadFromUrl: 1
+  _tableUrl: https://raw.githubusercontent.com/Alexciao/Atombuilder/main/periodicTable.json
+  _splashesUrlLocalization0: 
+  _splashesUrlLocalization1: 
 --- !u!114 &606600998
 MonoBehaviour:
   m_ObjectHideFlags: 0
