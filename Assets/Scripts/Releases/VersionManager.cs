@@ -14,9 +14,12 @@ public class VersionManager : MonoBehaviour
     [Space]
     [SerializeField] private PopupManager _updatePopup;
 
+    [SerializeField] private QuitManager _quit;
+
     [Header("Settings")] 
     public string _updateUrl = "https://github.com/" + RepoOwner + "/" + RepoName + "/releases/latest";
     [SerializeField] private bool _repoNameInVersion = false;
+    [SerializeField] private bool _quitOnUpdate = true;
 
     private void Start()
     {
@@ -32,23 +35,25 @@ public class VersionManager : MonoBehaviour
     
     async void CheckForUpdates()
     {
-        Debug.Log("Checking for updates...");
-        GitHubClient client = new GitHubClient(new ProductHeaderValue(RepoName)); 
-        IReadOnlyList<Release> releases = await client.Repository.Release.GetAll(RepoOwner, RepoName);
-        Release latestRelease = releases[0];
-        if (latestRelease.TagName != CurrentVersion)
+        Release latestRelease = GetLatestRelease();
+        if (latestRelease.TagName != CurrentVersion && !latestRelease.Prerelease)
         {
             Debug.Log("Latest version " + "(" + latestRelease.TagName + ")" + " is different from current version " + "(" + CurrentVersion + ")");
             _updatePopup.Open();
         }
-        else
-        {
-            Debug.Log("No new version available.");
-        }
+    }
+
+    Release GetLatestRelease()
+    {
+        GitHubClient client = new GitHubClient(new ProductHeaderValue(RepoName)); 
+        IReadOnlyList<Release> releases = client.Repository.Release.GetAll(RepoOwner, RepoName).Result;
+        Release latestRelease = releases[0];
+        return latestRelease;
     }
     
     public void OpenUpdateUrl()
     {
         UnityEngine.Application.OpenURL(_updateUrl);
+        if (_quitOnUpdate) _quit.Quit();
     }
 }
