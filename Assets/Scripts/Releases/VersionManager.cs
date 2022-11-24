@@ -5,7 +5,7 @@ using Octokit;
 
 public class VersionManager : MonoBehaviour
 {
-    public static readonly string CurrentVersion = "v1.2.2";
+    public static readonly string CurrentVersion = "v1.3.0";
     public static readonly string RepoOwner = "Alexciao";
     public static readonly string RepoName = "Atombuilder";
 
