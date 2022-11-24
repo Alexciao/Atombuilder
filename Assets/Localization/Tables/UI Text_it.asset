@@ -38,7 +38,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 33317733494784
-    m_Localized: Impostazioni
+    m_Localized: Preferenze
     m_Metadata:
       m_Items: []
   - m_Id: 35230810075136
@@ -173,7 +173,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2627388574494720
-    m_Localized: Facciamolo!
+    m_Localized: Andiamo!
     m_Metadata:
       m_Items: []
   references:
