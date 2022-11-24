@@ -164,6 +164,18 @@ MonoBehaviour:
     m_Localized: Premi ESC per mettere in pausa
     m_Metadata:
       m_Items: []
+  - m_Id: 2626454830149632
+    m_Localized: Aggiorna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2626935891652608
+    m_Localized: Aggiornamento disponibile!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2627388574494720
+    m_Localized: Facciamolo!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

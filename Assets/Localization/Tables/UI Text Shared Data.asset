@@ -163,6 +163,18 @@ MonoBehaviour:
     m_Key: Pause Helper Message
     m_Metadata:
       m_Items: []
+  - m_Id: 2626454830149632
+    m_Key: Update Popup Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2626935891652608
+    m_Key: Update Available
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2627388574494720
+    m_Key: Update Button
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
