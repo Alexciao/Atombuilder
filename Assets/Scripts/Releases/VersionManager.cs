@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Octokit;
 
 public class VersionManager : MonoBehaviour
 {
-    public static readonly string CurrentVersion = "v1.2.1";
+    public static readonly string CurrentVersion = "v1.2.2";
     public static readonly string RepoOwner = "Alexciao";
     public static readonly string RepoName = "Atombuilder";
 
@@ -13,7 +14,8 @@ public class VersionManager : MonoBehaviour
     [Space]
     [SerializeField] private PopupManager _updatePopup;
 
-    [Header("Settings")] [SerializeField] private string _updateUrl = "https://github.com/" + RepoOwner + "/" + RepoName + "/releases/latest";
+    [Header("Settings")] 
+    public string _updateUrl = "https://github.com/" + RepoOwner + "/" + RepoName + "/releases/latest";
 
     private void Start()
     {
@@ -23,9 +25,9 @@ public class VersionManager : MonoBehaviour
 
     async void CheckForUpdates()
     {
-        GitHubClient client = new GitHubClient(new ProductHeaderValue(RepoName));
-        var releases = await client.Repository.Release.GetAll(RepoOwner, RepoName);
-        var latestRelease = releases[0];
+        GitHubClient client = new GitHubClient(new ProductHeaderValue(RepoName)); 
+        IReadOnlyList<Release> releases = await client.Repository.Release.GetAll(RepoOwner, RepoName);
+        Release latestRelease = releases[0];
         if (latestRelease.TagName != CurrentVersion)
         {
             _updatePopup.Open();

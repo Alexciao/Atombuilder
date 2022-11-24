@@ -23,7 +23,6 @@ public class JSONManager : MonoBehaviour
     [SerializeField] private GuessManager _guessManager;
     [Header("Settings")] 
     [SerializeField] private bool doPeriodicTable = true;
-    [SerializeField] private bool doSplashText = false;
     [Space]
     [SerializeField] private bool showElement;
     [SerializeField] private bool downloadFromUrl = true;
