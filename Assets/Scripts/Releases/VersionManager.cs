@@ -16,21 +16,34 @@ public class VersionManager : MonoBehaviour
 
     [Header("Settings")] 
     public string _updateUrl = "https://github.com/" + RepoOwner + "/" + RepoName + "/releases/latest";
+    [SerializeField] private bool _repoNameInVersion = false;
 
     private void Start()
     {
-        _versionText.text = CurrentVersion;
+        SetVersionText(_versionText, _repoNameInVersion);
         CheckForUpdates();
     }
 
+    private void SetVersionText(TextMeshProUGUI text, bool addRepoName = true)
+    {
+        if (addRepoName) text.text = RepoName + " " + CurrentVersion;
+        else text.text = CurrentVersion;
+    }
+    
     async void CheckForUpdates()
     {
+        Debug.Log("Checking for updates...");
         GitHubClient client = new GitHubClient(new ProductHeaderValue(RepoName)); 
         IReadOnlyList<Release> releases = await client.Repository.Release.GetAll(RepoOwner, RepoName);
         Release latestRelease = releases[0];
         if (latestRelease.TagName != CurrentVersion)
         {
+            Debug.Log("Latest version " + "(" + latestRelease.TagName + ")" + " is different from current version " + "(" + CurrentVersion + ")");
             _updatePopup.Open();
+        }
+        else
+        {
+            Debug.Log("No new version available.");
         }
     }
     
