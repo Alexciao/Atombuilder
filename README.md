@@ -1,4 +1,4 @@
-# Atombuilder
+# 🔬 Atombuilder
 
 ## A fun game made in Unity where you have to build a random element from the periodic table.
 
@@ -11,6 +11,8 @@ Every time you get an atom wrong, you lose your streak.
 
 When you get an atom correct, **your streak is added to your score**.
 When you get an atom wrong, you lose **1 score**.
+
+# 🚀 Developers
 
 ### Build from source
 
