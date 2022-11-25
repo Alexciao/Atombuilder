@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using QFSW.QC;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GuessManager : MonoBehaviour
@@ -49,15 +45,20 @@ public class GuessManager : MonoBehaviour
     {
         rightGuess = Random.Range(0, _guessButtons.Length);
 
+        foreach (GameObject guessButton in _guessButtons)
+        {
+            guessButton.GetComponentInChildren<TextMeshProUGUI>().text = "";
+        }
+
         for (int i = 0; i < _guessButtons.Length; i++)
         {
-            if (i == rightGuess)
+            if (i != rightGuess)
             {
-                _guessButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = _jsonManager._rElement.symbol;
+                _guessButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = _jsonManager.table.elements[Random.Range(0, _jsonManager.table.elements.Count)].symbol;
             }
             else
             {
-                _guessButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = _jsonManager.table.elements[Random.Range(0, _jsonManager.table.elements.Count)].symbol;
+                _guessButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = _jsonManager._rElement.symbol;
             }
         }
     }
