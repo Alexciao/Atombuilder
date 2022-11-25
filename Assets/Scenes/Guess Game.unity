@@ -1544,7 +1544,6 @@ MonoBehaviour:
   _splashText: {fileID: 0}
   _guessManager: {fileID: 606601001}
   doPeriodicTable: 1
-  doSplashText: 0
   showElement: 0
   downloadFromUrl: 1
   _tableUrl: https://raw.githubusercontent.com/Alexciao/Atombuilder/main/periodicTable.json
@@ -2486,7 +2485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577615981777657, guid: 26475b81f169a274185893ef60e3645f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Increase
+      value: Decrease
       objectReference: {fileID: 0}
     - target: {fileID: 577615981777657, guid: 26475b81f169a274185893ef60e3645f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

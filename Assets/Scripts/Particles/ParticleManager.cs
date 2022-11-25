@@ -38,17 +38,13 @@ public class ParticleManager : MonoBehaviour
         neutronCount = 0;
     }
 
-    private void UpdateText()
-    {
-        electronText.text = electronCount.ToString();
-        protonText.text = protonCount.ToString();
-        neutronText.text = neutronCount.ToString();
-    }
-
+    // Runs every frame
     private void Update()
     {
         UpdateText();
     }
+    
+    #region Utility Functions
     
     public void AddElectron()
     {
@@ -79,4 +75,13 @@ public class ParticleManager : MonoBehaviour
     {
         neutronCount -= addAmount;
     }
+    
+    private void UpdateText()
+    {
+        electronText.text = electronCount.ToString();
+        protonText.text = protonCount.ToString();
+        neutronText.text = neutronCount.ToString();
+    }
+    
+    #endregion
 }
