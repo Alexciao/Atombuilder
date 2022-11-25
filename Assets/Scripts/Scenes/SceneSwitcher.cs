@@ -18,6 +18,7 @@ public class SceneSwitcher : MonoBehaviour
     
     IEnumerator LoadScene(int buildIndex)
     {
+        Debug.Log("Switching scene to " + buildIndex);
         SceneManager.LoadScene(buildIndex);
         yield return null;
     }
