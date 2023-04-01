@@ -3,6 +3,7 @@
 ## A fun game made in Unity where you have to build a random element from the periodic table.
 
 Made for a science project.
+
 **Note:** doesn't work without an internet connection, as the periodic table is downloaded from GitHub at run.
 
 ### Scoring system
